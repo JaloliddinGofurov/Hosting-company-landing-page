@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SITE-HEADER */
+.site-header {
+  padding: 20px 0;
+  background-color: #fff;
+
+}
+.site-header-first {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* fon rangi */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+.site-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header__title-link {
+  font-size: 24px;
+  color: #222;
+  text-decoration: none;
+}
+.top-menu-nav {
+  padding-right: 0;
+}
+.top-menu-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.top-menu-item {
+  margin-right: 14px;
+  list-style-type: none;
+}
+.top-menu-item:last-child {
+  margin-right: 0;
+}
+.top-menu-item:not(:last-child) {
+  margin-right: 14px;
+}
+.top-menu-link {
+  color: #222;
+  text-decoration: none;
+
+}
+/* Card-link-icon */
+.cart-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.cart-icon::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f07a";
+  font-size: 24px;
+  color: #333;
+}
+
+/* HERO */
+.hero {
+  width: 100%;
+  padding-top: 100px;
+  background-size: contain;
+  background-position: center bottom 0px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-01.png),  linear-gradient(237deg, #46b3ff 0%, #0752fe 100%) !important;
+}
+.hero-wrapper {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero-inner {
+  width: 580px;
+  margin-top: 0;
+}
+.header-content {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.header-inner__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 48px;
+  font-weight: 500;
+
+}
+.header-inner__text {
+  font-size: 16px;
+  line-height: 2;
+}
+.button {
+  padding: 12px 24px;
+  background-color: #081f38;
+  color: #fff;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.hero-img__link {
+  width: 450px;
+  height: 450px;
+}
+
+/* Domain */
+.domain-row {
+  padding-top: 0px;
+  padding-bottom: 80px;
+  background-color: #fff;
+}
+.domain-rows__list {
+  display: flex;
+  align-items: center;
+}
+.domain-rows__item {
+  margin-right: 60px;
+  list-style: none;
+}
+.domain-pricing {
+  font-size: 12px;
+  color: rgba(0,0,0,0.4);
+}
+.domain-pricing__simbol {
+  font-size: 28px;
+  font-weight: bold;
+}
+.domain-pricing__first {
+  border-radius: 0;
+  color: #2970fa;
+}
+.domain-pricing__second {
+  color: #222;
+}
+
+/* MAIN */
+.main-content {
+  background-color: #f9f9f9;
+}
+.services-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.service-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.services-header {
+  width: 100%;
+  max-width: 650px;
+  margin-left: 120px;
+  padding-left: 20px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  margin-right: 30px;
+  margin-bottom: 60px;
+
+}
+
+.services-subtitle {
+  color: #f7a600;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.services-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0050ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0, 80, 255, 0.2);
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.service-inner {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-top: 10px;
+}
+.service-inner:not(:last-child) {
+  margin-right: 30px;
+}
+.service-inner__bottom {
+  margin-top: -120px;
+  margin-bottom: 120px;
+}
+.service-inner__icon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 32px;
+}
+.service-inner__icon::after {
+  position: absolute;
+  top: 100%; /* iconkaning pastki chetidan boshlanadi */
+  left: 50%;
+  margin-top: 30px;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 2px;
+  background-color: #ff8f00;
+  content: "";
+}
+.service-box {
+  padding: 30px;
+  padding-top: 0;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  flex: 1 1 250px;
+  margin: 15px;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+.service-box img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.service-box h3 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.service-box p {
+  font-size: 16px;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.service-box__link {
+  font-size: 14px;
+  color: #0050ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.service-box__link::after {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url('icon-arrow.svg');
+  color: #0050ff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 8px;
+  vertical-align: middle;
+  content: "";
+}
+
+/* FEATURES SECTION */
+.feature-section {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.features-global-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+}
+.features-content {
+  width: 600px;
+  margin-left: 80px;
+  margin-right: 50px;
+}
+.features-title {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff8f00;
+}
+.features-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 38px;
+  color: #333;
+}
+.features-description {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 2;
+  color: #666;
+}
+.features-img {
+  height: 300px;
+  width: 500px;
+  margin-right: 0;
+}
+.features-line {
+  color: #666;
+  margin-top: 80px;
+}
